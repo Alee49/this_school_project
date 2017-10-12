@@ -9,7 +9,7 @@ while cont == 0:
     print("Please enter your conversion in this format: lowercase_unit_from(value,uppercase_unit_to)")
     print("")
     print("Example:")
-    print("To convert 45 degrees Fahrenheit to degrees Celsius, type:")
+    print("To convert 45 degrees Fahrenheit to Celsius, type:")
     print("f(45,C)")
   
     def f(value, base):
@@ -20,17 +20,17 @@ while cont == 0:
       elif base == K:
           return (value - 32)/1.8 + 273.15
       else:
-          print("Error: incorrect format.")
+          print ("Error: incorrect format.")
   
     def c(value, base):
       if base == C:
           return value
       elif base == F:
-          return (1.8 + value) + 32
+          return (1.8 * value) + 32
       elif base == K:
           return value + 273.15
       else:
-          print("Error: incorrect format.")
+          print ("Error: incorrect format.")
   
     def k(value, base):
       if base == K:
@@ -40,7 +40,7 @@ while cont == 0:
       elif base == F:
           return (value - 273.15) * 1.8 + 32
       else:
-          print("Error: incorrect format.")
+          print ("Error: incorrect format.")
   elif(utype == "length"):
     print("In progress");
   elif(utype == "volume"):
