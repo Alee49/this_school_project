@@ -8,32 +8,32 @@ print("Example:")
 print("To convert 45 degrees Fahrenheit to Celsius, type:")
 print("f(45,C)")
 
-def f(value, base):
-    if base == F:
+def f(value, new):
+    if new == F:
         return value
-    elif base == C:
+    elif new == C:
         return (value - 32)/1.8
-    elif base == K:
+    elif new == K:
         return (value - 32)/1.8 + 273.15
     else:
         print ("Error: incorrect format.")
 
-def c(value, base):
-    if base == C:
+def c(value, new):
+    if new == C:
         return value
-    elif base == F:
+    elif new == F:
         return (1.8 * value) + 32
-    elif base == K:
+    elif new == K:
         return value + 273.15
     else:
         print ("Error: incorrect format.")
 
-def k(value, base):
-    if base == K:
+def k(value, new):
+    if new == K:
         return value
-    elif base == C:
+    elif new == C:
         return (value - 273.15)
-    elif base == F:
+    elif new == F:
         return (value - 273.15) * 1.8 + 32
     else:
         print ("Error: incorrect format.")
